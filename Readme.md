@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Горшкова](https://up.htmlacademy.ru/adaptive/20/user/1542999).
-* Наставник: `Yaroslav Baronin`.
+* Наставник: [Ярослав Баронин](https://htmlacademy.ru/profile/id155830).
 
 ---
 
