@@ -1,0 +1,9 @@
+@import "mixins.scss";
+
+@font-face {
+  @include font("Oswald-Regular", 400, normal, "Oswald");
+}
+
+@font-face {
+  @include font("Oswald-Medium", 500, normal, "Oswald");
+}

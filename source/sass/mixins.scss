@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+//media
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+
+// fonts
+$pathFonts: "../fonts";
+
+@mixin font($fontName, $weight, $style, $urlName) {
+  font-family: "#{$fontName}";
+  src: url(#{$pathFonts}/#{$urlName}/#{$fontName}.eot) format("eot"),
+    url(#{$pathFonts}/#{$urlName}/#{$fontName}.woff) format("woff"),
+    url(#{$pathFonts}/#{$urlName}/#{$fontName}.woff2) format("woff2"),
+    url(#{$pathFonts}/#{$urlName}/#{$fontName}.ttf) format("truetype"),
+    url(#{$pathFonts}/#{$urlName}/#{$fontName}.svg) format("svg");
+  font-weight: $weight;
+  font-style: $style;
+  font-display: swap;
+}
