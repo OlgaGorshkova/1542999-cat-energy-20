@@ -20,11 +20,10 @@
     top: 0;
     z-index: -1;
 
-    @include mobile-only{
+    @include mobile-only {
       width: 100%;
       background-color: $color-bg-cat-index;
       text-align: center;
     }
   }
 }
-  

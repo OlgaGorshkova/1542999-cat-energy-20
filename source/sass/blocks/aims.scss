@@ -1,11 +1,11 @@
 //@import "blocks/aims.scss"
 .aims__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 22px 20px 27px;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 22px 20px 27px;
+  margin: 0;
+  list-style: none;
 }
 
 .aims__item {
@@ -14,7 +14,7 @@
     "pic title"
     "txt txt"
     "lnk lnk";
-  grid-template-columns: 1fr 2fr;    
+  grid-template-columns: 1fr 2fr;
   row-gap: 22px;
 
   padding-top: 24px;
@@ -23,18 +23,18 @@
   background-color: $color-basic-grey;
 }
 
-.aims__icon{
+.aims__icon {
   grid-area: pic;
   margin-left: 20px;
 
   &--bg {
-    circle {      
+    circle {
       fill: $color-basic-green;
     }
   }
 }
 
-.aims__title{
+.aims__title {
   grid-area: title;
   margin: auto 0;
 
@@ -45,13 +45,15 @@
   text-transform: uppercase;
   vertical-align: middle;
 }
-.aims__text{
+
+.aims__text {
   grid-area: txt;
   margin: 0 20px;
 
   line-height: 129%;
 }
-.aims__link{
+
+.aims__link {
   grid-area: lnk;
   padding: 15px 0 0;
   margin-left: 20px;

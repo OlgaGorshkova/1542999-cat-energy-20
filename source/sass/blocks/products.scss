@@ -24,10 +24,10 @@
 
   list-style: none;
 
-  @include tablet{
+  @include tablet {
     max-width: $tablet-width;
     border: 1px solid red;
-    padding: 0 30px;    
+    padding: 0 30px;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
   }
@@ -36,9 +36,9 @@
 .products__item {
   @include mobile-only {
     border-bottom: 1px solid $color-special-grey-2;
-  } 
+  }
 
-  @include tablet{
+  @include tablet {
     width: 324px;
     height: 511px;
     border: 1px solid blue;
