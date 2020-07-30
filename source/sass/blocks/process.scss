@@ -1,7 +1,41 @@
+.process {
+  margin: 0 20px 42px;
+}
+
 .process__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 38px;
+
   font-family: Oswald-Regular;
   font-weight: normal;
   font-size: 36px;
   line-height: 111%;
+}
+
+.process__list {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.process__item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.process__icon {
+  flex-basis: 60px;
+  height: 60px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: $color-basic-green;
+}
+
+.process__description { 
+  flex-basis: 220px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 129%;
 }
