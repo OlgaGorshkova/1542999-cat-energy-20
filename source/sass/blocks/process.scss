@@ -28,13 +28,16 @@
 .process__icon {
   flex-basis: 60px;
   height: 60px;
-  padding-top: 5px;
-  text-align: center;
   background-color: $color-basic-green;
+
+  img {
+    margin: 5px;
+  }
 }
 
 .process__description { 
-  flex-basis: 220px;
+  flex-basis: 200px;
+  flex-grow: 1;
   margin: 0;
   font-size: 14px;
   line-height: 129%;
