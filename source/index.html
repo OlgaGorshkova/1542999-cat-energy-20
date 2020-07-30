@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo-icon">
@@ -48,7 +49,12 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav>      
+      <div class="page-header__bg">
+        <div class="page-header__bg-wrapper">
+          <img src="img/index-background-mobile@1x.jpg" widht=320 height=305>
+        </div>
+      </div>
     </header>
 
     <main class="page-main">
@@ -57,16 +63,16 @@
       </h1>
 
       <section class="promo">
-        <header class="promo__header">
+        <header class="promo__header">          
           <h2 class="promo__title">
-            Функциональное питание для котов
+            Функциональное<br> питание для котов
           </h2>
           <p class="promo__slogan">
             Занялся собой? Займись котом!
           </p>
         </header>
         <div class="promo__img">
-          <img src="img/index-can-mobile.png" width="280" height="270" alt="промо изображение">
+          <img class="promo__img--mobile" src="img/index-can-mobile@1x.png" width="280" height="270" alt="промо изображение">
         </div>
         <div class="promo__background promo__background--mobile">
         </div>
@@ -81,18 +87,18 @@
         </h2>
         <ul class="aims__list">
           <li class="aims__item">
-            <header class="aims__header">
-              <span class="aims__icon aims__icon--slim">
-              </span>
-              <h3 class="aims__title">
+            <span class="aims__icon">
+              <svg class="aims__icon--bg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25"/>                
+              </svg>
+            </span>
+            <h3 class="aims__title">
                 Похудение
-              </h3>
-            </header>
+            </h3>
             <p class="aims__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <hr class="aims__divider" />
             <div class="aims__link">
               <a href="catalog.html">
                 Каталог slim
@@ -103,18 +109,18 @@
             </div>
           </li>
           <li class="aims__item">
-            <header class="aims__header">
-              <span class="aims__icon aims__icon--pro">
-              </span>
-              <h3 class="aims__title">
-                Набор массы
-              </h3>
-            </header>
+            <span class="aims__icon">
+              <svg class="aims__icon--bg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25"/>                
+              </svg>
+            </span>
+            <h3 class="aims__title">
+              Набор массы
+            </h3>            
             <p class="aims__text">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <hr class="aims__divider" />
             <div class="aims__link">
               <a href="catalog.html">
                 Каталог pro

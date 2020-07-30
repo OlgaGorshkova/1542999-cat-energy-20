@@ -1,0 +1,141 @@
+.products {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.products__header {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  margin: 0;
+  border-bottom: 1px solid $color-special-grey-2;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.products__list {
+  display: grid;
+  row-gap: 9px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  @include tablet{
+    max-width: $tablet-width;
+    border: 1px solid red;
+    padding: 0 30px;    
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+}
+
+.products__item {
+  @include mobile-only {
+    border-bottom: 1px solid $color-special-grey-2;
+  } 
+
+  @include tablet{
+    width: 324px;
+    height: 511px;
+    border: 1px solid blue;
+  }
+}
+
+.products__card {
+  display: grid;
+  grid-template-areas:
+    "pic title"
+    "pic info"
+    "btn btn";
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: min-content 1fr;
+
+  width: 320px;
+  height: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.products__title {
+  grid-area: title;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.products__img {
+  grid-area: pic;
+
+  width: 140px;
+  height: 112px;
+  background-size: cover;
+  background-position: center;
+
+  &--product1 {
+    background-image: url("../img/chicken-small-mobile@1x.jpg");
+  }
+
+  &--product2 {
+    background-image: url("../img/chicken-big-mobile@1x.jpg");
+  }
+
+  &--product3 {
+    background-image: url("../img/fish-small-mobile@1x.jpg");
+  }
+
+  &--product4 {
+    background-image: url("../img/fish-big-mobile@1x.jpg");
+  }
+
+  &--product5 {
+    background-image: url("../img/buckwheat-small-mobile@1x.jpg");
+  }
+
+  &--product6 {
+    background-image: url("../img/buckwheat-big-mobile@1x.jpg");
+  }
+
+  &--product7 {
+    background-image: url("../img/rice-small-mobile@1x.jpg");
+  }
+}
+
+.products__info {
+  grid-area: info;
+  margin: 18px 20px 9px 0;
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 133%;
+  }
+}
+
+.products__button {
+  grid-area: btn;
+  margin: 13px auto 14px auto;
+  width: 280px;
+  height: 40px;
+
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-basic-white;
+
+  background-color: $color-basic-green;
+  border: none;
+}

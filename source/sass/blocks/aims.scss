@@ -1,0 +1,70 @@
+//@import "blocks/aims.scss"
+.aims__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 22px 20px 27px;
+    margin: 0;
+    list-style: none;
+}
+
+.aims__item {
+  display: grid;
+  grid-template-areas:
+    "pic title"
+    "txt txt"
+    "lnk lnk";
+  grid-template-columns: 1fr 2fr;    
+  row-gap: 22px;
+
+  padding-top: 24px;
+  padding-bottom: 18px;
+
+  background-color: $color-basic-grey;
+}
+
+.aims__icon{
+  grid-area: pic;
+  margin-left: 20px;
+
+  &--bg {
+    circle {      
+      fill: $color-basic-green;
+    }
+  }
+}
+
+.aims__title{
+  grid-area: title;
+  margin: auto 0;
+
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 154%;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.aims__text{
+  grid-area: txt;
+  margin: 0 20px;
+
+  line-height: 129%;
+}
+.aims__link{
+  grid-area: lnk;
+  padding: 15px 0 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  border-top: 1px solid $color-line;
+
+  a {
+    font-family: "Oswald-Regular", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-basic-black;
+  }
+}
