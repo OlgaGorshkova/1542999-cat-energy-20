@@ -52,14 +52,24 @@
     "pic info"
     "btn btn";
   grid-template-rows: min-content 1fr min-content;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: 1fr 1fr;
 
-  width: 320px;
   height: 190px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 11px;
   padding-bottom: 9px;
+
+  &--all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
 }
 
 .products__title {
@@ -105,26 +115,34 @@
   &--product7 {
     background-image: url("../img/rice-small-mobile@1x.jpg");
   }
+
+  &--all {
+    margin-top: 14px;
+    margin-bottom: 23px;
+  }
 }
 
 .products__info {
   grid-area: info;
-  margin: 18px 20px 9px 0;
+  margin: 18px 0 9px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 133%;
 
   & div {
     display: flex;
     justify-content: space-between;
+  }
 
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 133%;
+  &--all {
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
 
 .products__button {
   grid-area: btn;
   margin: 13px auto 14px auto;
-  width: 280px;
   height: 40px;
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
@@ -138,4 +156,9 @@
 
   background-color: $color-basic-green;
   border: none;
+
+  &--all {
+    background-color: $color-basic-grey;
+    color: $color-special-dark-grey;
+  }
 }
