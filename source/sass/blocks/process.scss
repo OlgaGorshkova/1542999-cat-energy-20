@@ -16,13 +16,12 @@
   display: flex;
   margin: 0;
   flex-direction: column;
-  gap: 20px;
 }
 
 .process__item {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .process__icon {
@@ -38,7 +37,7 @@
 .process__description {
   flex-basis: 200px;
   flex-grow: 1;
-  margin: 0;
+  margin-left: 20px;
   font-size: 14px;
   line-height: 129%;
 }

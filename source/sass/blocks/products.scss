@@ -115,11 +115,14 @@
   &--product7 {
     background-image: url("../img/rice-small-mobile@1x.jpg");
   }
+}
 
-  &--all {
+.products__add-btn {
     margin-top: 14px;
     margin-bottom: 23px;
-  }
+    border: none;
+    padding: 0;
+    background: none;
 }
 
 .products__info {
