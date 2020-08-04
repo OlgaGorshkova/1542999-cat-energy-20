@@ -1,4 +1,268 @@
-.main-nav__close {
-  padding-left: 3px;
-  padding-right: 3px;
+.main-nav {
+  position: relative;
+  width: auto;
+
+  @include tablet {
+    background-color: pink;
+  }
+}
+
+@include mobile-only {
+  .main-nav--closed .fix-space {
+    display: none;
+  }
+  
+  .main-nav--opened .fix-space {  
+    display: block;
+    width: 0;
+    height: 212px;
+    position: relative;
+  }
+}
+
+.main-nav__toggle {
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 38px;
+  cursor: pointer;
+  border: none;
+  background-color: $color-basic-white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $color-basic-black;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: $color-special-grey;
+  box-shadow:
+    0 8px 0 0 $color-special-grey,
+    0 16px 0 0 $color-special-grey;
+}
+
+@include mobile-only {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 55px;
+    right: -20px;
+    z-index: 10;
+    width: 100vw;
+  }
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 7px;
+    height: 100%;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .site-list__item--active a {
+    padding-right: 21px;
+    padding-left: 21px;
+    text-align: left;
+  } 
+}
+
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 26px;
+    height: 2px;
+    background-color: $color-basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $color-special-grey;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__wrapper {
+ @include tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+  
+ @include desktop {
+    width: 960px;
+  }
+}
+
+.site-list {
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 570px;
+  }
+  
+  @include desktop {
+    width: 780px;
+  }
+
+}
+
+.site-list__item {
+  @include tablet {
+   margin-right: 32px;
+ 
+   &:last-child {
+     margin-right: 0;
+   }
+
+   &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background: #826550;
+      }
+    }  
+  }
+
+  @include desktop {
+    margin-right: 0;
+
+    &--active::after {
+      right: 30px;
+      left: 30px;
+    }
+  }
+}
+
+.site-list__item a[href] {
+  @include tablet {
+    &:hover {
+      color: red;
+ 
+      background-color: yellowgreen;
+    }
+ 
+    &:active {
+      color: #ffffff;
+ 
+      background-color: yellow;
+      opacity: 0.3;
+    }
+  }
+
+  @include desktop {
+    &:hover {
+      color: #000000;
+
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: #ffffff;
+      opacity: 1;
+    }
+  }
+}
+
+.site-list a {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  text-transform: uppercase;
+  font-family: "Oswald-Medium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: $color-basic-black;
+  text-decoration: none;
+
+  border-bottom: 1px solid $color-special-grey-2;
+
+  &:first-child {
+    border-top: 1px solid $color-special-grey-2;
+  }
+  
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @include tablet {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    background: none;
+    border: none;
+  }
+
+  @include desktop {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
 }
