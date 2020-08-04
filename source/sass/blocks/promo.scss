@@ -1,0 +1,66 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.promo__header {
+  height: 305px;
+  width: 100%;
+
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.promo__title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+
+  color: $color-basic-white;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 129%;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $color-basic-white;
+}
+
+.promo__img {
+  position: relative;
+  width: 280px;
+  height: 135px;
+
+  &--mobile {
+    position: absolute;
+    top: -135px;
+  }
+}
+
+.promo__button {
+  height: 40px;
+
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-basic-white;
+
+  background-color: $color-basic-green;
+  border: none;
+}

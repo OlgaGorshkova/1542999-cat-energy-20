@@ -1,0 +1,29 @@
+.page-header {
+  border-bottom: 1px solid $color-special-grey-2;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 11px;
+  margin-bottom: 17px;
+}
+
+.page-header__bg {
+  position: relative;
+
+  &-wrapper {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    @include mobile-only {
+      width: 100%;
+      background-color: $color-bg-cat-index;
+      text-align: center;
+    }
+  }
+}
