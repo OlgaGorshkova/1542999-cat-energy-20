@@ -7,19 +7,20 @@
   flex-direction: column;
 
   align-items: center;
-  margin: 7px 20px 22px;
 }
 
 .page-footer__logo {
-  width: 100%;
   border-bottom: 1px solid $color-line;
   text-align: center;
-  padding: 32px 0;
+  padding: 39px 0 32px;
+  width: 100%;
 }
 
 .page-footer__social {
-  width: 100%;
+  padding: 20px 0 21px;
   border-bottom: 1px solid $color-line;
+  text-align: center;
+  width: 100%;
 }
 
 .social {
@@ -28,7 +29,7 @@
   width: 130px;
   height: 22px;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .social__icon {
@@ -40,11 +41,15 @@
 }
 
 .page-footer__copyright {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 22px 0;
+  width: 100%;
+}
+.page-footer__copyright p {  
+  margin: 0;
 }
 
 .copyright__text {
