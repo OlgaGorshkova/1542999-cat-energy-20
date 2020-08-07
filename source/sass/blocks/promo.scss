@@ -2,15 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include tablet {
+    align-items: flex-start;
+  }
 }
 
 .promo__header {
-  height: 305px;
-  width: 100%;
+  order: 1;
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+
+
 }
 
 .promo__title {
@@ -23,6 +28,12 @@
   text-align: center;
 
   color: $color-basic-white;
+
+  @include tablet {
+    text-align: left;
+    color: $color-basic-black;
+
+  }
 }
 
 .promo__slogan {
@@ -33,21 +44,39 @@
   text-align: center;
 
   color: $color-basic-white;
+
+  @include tablet {    
+    text-align: left;
+    color: $color-basic-black;
+  }
 }
 
 .promo__img {
-  position: relative;
-  width: 280px;
-  height: 135px;
+  position: relative;  
+  order: 2;
 
-  &--mobile {
-    position: absolute;
-    top: -135px;
+  @include tablet {
+    order: 3;    
+
+    img {
+      width: 709px;
+      height: 609px;
+    }
   }
 }
 
 .promo__button {
-  height: 40px;
+  min-height: 40px;
+  order: 3;
+  width: 100%;
+
+  
+  @include tablet {
+    order: 2;
+    width: 244px;
+    position: absolute;
+    top: 292px;
+  }
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-style: normal;
