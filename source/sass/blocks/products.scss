@@ -14,6 +14,11 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 100%;
+
+  @include tablet {
+    padding-top: 65px;
+    padding-bottom: 83px;
+  }
 }
 
 .products__list {
@@ -25,11 +30,17 @@
   list-style: none;
 
   @include tablet {
-    max-width: $tablet-width;
     border: 1px solid red;
-    padding: 0 30px;
+    padding: 0;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+  }
+
+  @include desktop {
+    border: 1px solid blue;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -39,82 +50,101 @@
   }
 
   @include tablet {
-    width: 324px;
-    height: 511px;
     border: 1px solid blue;
   }
 }
 
 .products__card {
-  display: grid;
-  grid-template-areas:
-    "pic title"
-    "pic info"
-    "btn btn";
-  grid-template-rows: min-content 1fr min-content;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-  height: 190px;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 11px;
   padding-bottom: 9px;
 
   &--all {
-    display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
 
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 11px;
-    padding-bottom: 9px;
+.products__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 50%;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 133%;
+
+  &--all {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.products__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  dt {
+    display: inline-block;
+    flex-basis: 50%;
+  }  
+  dd {
+    display: inline-block;
+    text-align: right;
+    margin: 0;
+    flex-basis: 50%;
   }
 }
 
 .products__title {
-  grid-area: title;
   margin: 0;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
 }
 
 .products__img {
-  grid-area: pic;
+  width: 50%;
+  align-self: center;
 
-  width: 140px;
-  height: 112px;
-  background-size: cover;
-  background-position: center;
-
-  &--product1 {
-    background-image: url("../img/chicken-small-mobile@1x.jpg");
+  img {
+    width: 140px;
+    height: 112px;
   }
 
-  &--product2 {
-    background-image: url("../img/chicken-big-mobile@1x.jpg");
-  }
+  // &--product1 {
+  //   background-image: url("../img/chicken-small-mobile@1x.jpg");
+  // }
 
-  &--product3 {
-    background-image: url("../img/fish-small-mobile@1x.jpg");
-  }
+  // &--product2 {
+  //   background-image: url("../img/chicken-big-mobile@1x.jpg");
+  // }
 
-  &--product4 {
-    background-image: url("../img/fish-big-mobile@1x.jpg");
-  }
+  // &--product3 {
+  //   background-image: url("../img/fish-small-mobile@1x.jpg");
+  // }
 
-  &--product5 {
-    background-image: url("../img/buckwheat-small-mobile@1x.jpg");
-  }
+  // &--product4 {
+  //   background-image: url("../img/fish-big-mobile@1x.jpg");
+  // }
 
-  &--product6 {
-    background-image: url("../img/buckwheat-big-mobile@1x.jpg");
-  }
+  // &--product5 {
+  //   background-image: url("../img/buckwheat-small-mobile@1x.jpg");
+  // }
 
-  &--product7 {
-    background-image: url("../img/rice-small-mobile@1x.jpg");
-  }
+  // &--product6 {
+  //   background-image: url("../img/buckwheat-big-mobile@1x.jpg");
+  // }
+
+  // &--product7 {
+  //   background-image: url("../img/rice-small-mobile@1x.jpg");
+  // }
 }
 
 .products__add-btn {
@@ -125,28 +155,9 @@
   background: none;
 }
 
-.products__info {
-  grid-area: info;
-  margin: 18px 0 9px;
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 133%;
-
-  & div {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &--all {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-}
-
 .products__button {
-  grid-area: btn;
   margin: 13px auto 14px auto;
-  height: 40px;
+  min-height: 40px;
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-weight: normal;
