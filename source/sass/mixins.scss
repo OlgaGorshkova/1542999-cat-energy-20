@@ -1,9 +1,5 @@
 @import "variables.scss";
 
-//media
-$tablet-width: 768px;
-$desktop-width: 1200px;
-
 @mixin mobile-only {
   @media (max-width: $mobile-width-only) {
     @content;

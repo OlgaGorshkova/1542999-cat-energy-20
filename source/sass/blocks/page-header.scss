@@ -16,6 +16,10 @@
     align-items: flex-end;
   }
 
+  @include desktop {
+    padding-top: 53px;
+  }
+
 }
 
 .page-header__logo {  
@@ -42,35 +46,9 @@
   @include desktop {
     height: 59px;
     width: 202px;
-    
-    background-color: pink;
+
     background-image: url("../../img/logo-desktop.svg" );
     background-repeat: no-repeat;
     background-position: left;
-  }
-}
-
-// TODO
-
-.page-header__bg {    
-  position: relative;
-  
-
-  @include tablet {
-    display: none;
-  }
-
-  &-wrapper {
-    position: absolute;
-    top: 0;
-    //left: -20px;
-    z-index: -1;
-
-    @include mobile-only {
-      width: 100%;
-      //width: Calc(100% + 40px); 
-      background-color: $color-bg-cat-index;
-      text-align: center;
-    }
   }
 }

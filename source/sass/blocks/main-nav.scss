@@ -135,7 +135,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
   } 
 }
 
@@ -145,12 +144,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
   }
-  
-  @include desktop {
-  }
-
 }
 
 .site-list__item {
@@ -163,6 +157,14 @@
 
     &--active {
       border-bottom: 2px solid $color-basic-green;
+    }
+  }
+
+  @include desktop {
+    margin-right: 37px;
+
+    &--active {
+      border-bottom-color: $color-basic-white;
     }
   }
 }
@@ -236,5 +238,10 @@
   }
 
   @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-basic-white;
+
+    padding-bottom: 8px;
   }
 }
