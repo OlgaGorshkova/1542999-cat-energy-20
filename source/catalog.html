@@ -47,7 +47,11 @@
           <li class="products__item">
             <div class="products__card">
               <span class="products__img">
-                <img src="img/chicken-small-mobile@1x.jpg" width="140" height="112">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
+                  <img src="img/chicken-small-mobile@1x.jpg" width="140" height="112" alt="курица 500г">
+                </picture>
               </span>
               <div class="products__info">
                 <h3 class="products__title">
@@ -184,7 +188,7 @@
           </li>
           <li class="products__item">
             <div class="products__card">
-              <span class="products__img">
+              <span class="products__img">                
                 <img src="img/rice-small-mobile@1x.jpg" width="140" height="112">
               </span>
               <div class="products__info">
