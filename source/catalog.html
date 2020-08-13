@@ -74,8 +74,11 @@
           <li class="products__item">
             <div class="products__card">
               <span class="products__img">
-                <img src="img/chicken-big-mobile@1x.jpg" width="140" height="112">
-              </span>
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
+                  <img src="img/chicken-big-mobile@1x.jpg" width="140" height="112" alt="курица 1000г">
+                </picture>
               <div class="products__info">
                 <h3 class="products__title">
                   Cat Energy<br> PRO 1000 г

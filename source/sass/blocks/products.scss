@@ -70,6 +70,7 @@
   @include tablet {
     flex-direction: column;
     padding: 0 36px;
+    border:1px solid green;
   }
 }
 
@@ -134,14 +135,24 @@
 
 .products__img {
   width: 50%;
-  align-self: center;
+  align-self: center;  
 
   @include tablet {
-    width: auto;
+    width: 252px;
+    height: 161px;
+    position: relative;
+
+    border: 1px solid red;
 
     img {
-      width: 168px;
+      position: absolute;
+      bottom: 34px;
+      left: -36px;
+      height: auto;
+      width: auto;
+      max-width:  unset;
     }
+
   }
 }
 
