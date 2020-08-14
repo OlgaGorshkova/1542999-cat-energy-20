@@ -4,6 +4,34 @@
   }
 }
 
+.page-header__bg {
+  position: absolute;
+  top:  var(--menu-height);  
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+
+  background-color: #65a93c;
+  
+  @include tablet {
+    display: none;
+  }
+    
+  @include desktop {
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 50%;
+    text-align: right;
+
+    img {
+      width: 720px;
+      height: 696px;
+    }
+  }
+
+}
+
 .page-header__wrapper {
   display: flex;
   flex-direction: row;

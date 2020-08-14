@@ -6,16 +6,22 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body page__body--index">
-    <header class="page-header container">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo"></a>        
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__bg">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index-background-desktop@1x.jpg">
+          <img src="img/index-background-mobile@1x.jpg" width="320" height="305" alt="фон с изображением кота">
+        </picture>
+      </div>
+      <div class="page-header__wrapper container">
+        <a class="page-header__logo"></a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--index">
               <li class="site-list__item site-list__item--active">
                 <a>
                   Главная

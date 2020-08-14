@@ -16,8 +16,17 @@
   line-height: 100%;
 
   @include tablet {
+    border-bottom: none;
     padding-top: 65px;
     padding-bottom: 83px;
+
+    font-size: 60px;
+    text-align: left;
+  }
+
+  @include desktop {
+    padding-top: 74px;
+    padding-bottom: 84px;
   }
 }
 
@@ -30,27 +39,25 @@
   list-style: none;
 
   @include tablet {
-    border: 1px solid red;
-    padding: 0;
+    padding-top: 73px;
+    padding-bottom: 68px;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    row-gap: 141px;
   }
 
-  @include desktop {
-    border: 1px solid blue;
-    padding: 0;
+  @include desktop {    
+    padding-top: 80px;
+    padding-bottom: 76px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
+    row-gap: 143px;
   }
 }
 
-.products__item {
+.products__item {  
   @include mobile-only {
     border-bottom: 1px solid $color-special-grey-2;
-  }
-
-  @include tablet {
-    border: 1px solid blue;
   }
 }
 
@@ -62,7 +69,7 @@
   padding-top: 11px;
   padding-bottom: 9px;
 
-  &--all {
+  &--more {
     flex-direction: column;
     align-items: center;
   }
@@ -70,7 +77,18 @@
   @include tablet {
     flex-direction: column;
     padding: 0 36px;
-    border:1px solid green;
+
+    background-color: $color-basic-grey;
+
+    &--more {
+      background-color: unset;
+      border: 2px solid $color-basic-grey;
+    }
+  }
+
+  @include desktop {
+    padding-right: 38px;
+    padding-left: 38px;
   }
 }
 
@@ -85,13 +103,18 @@
   font-size: 12px;
   line-height: 133%;
 
-  &--all {
-    padding-top: 8px;
-    padding-bottom: 8px;
+  &--more {
+    width: auto;
   }
 
-  @include tablet {
+  @include tablet {    
     width: 100%;
+
+    &--more {  
+      max-width: 167px;   
+      text-align: center;
+    }
+
   }
 }
 
@@ -99,6 +122,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 9px;
+  margin-top: 0;
+
   dt {
     display: inline-block;
     flex-basis: 50%;
@@ -111,6 +137,8 @@
   }
 
   @include tablet {
+    margin-top: 20px;
+    margin-bottom:21px;
     dt, dd {
       padding-bottom: 7px;
       padding-top: 6px;
@@ -130,19 +158,33 @@
     text-align: center;
     font-size: 20px;
     line-height: 120%;
+
+    &--more {
+      max-width: 134px;
+    }
   }
 }
 
 .products__img {
   width: 50%;
-  align-self: center;  
+  align-self: center;
+
+  &--more {
+    text-align: center;
+
+    button {
+      margin-top: 14px;
+      margin-bottom: 23px;
+      border: none;
+      padding: 0;
+      background: none;
+    }
+  }
 
   @include tablet {
     width: 252px;
     height: 161px;
     position: relative;
-
-    border: 1px solid red;
 
     img {
       position: absolute;
@@ -154,17 +196,19 @@
     }
 
   }
+
+  @include desktop{
+    width: 168px;
+
+    img {
+      bottom: 40px;
+      left: -38px;
+    }
+
+  }
 }
 
-.products__add-btn {
-  margin-top: 14px;
-  margin-bottom: 23px;
-  border: none;
-  padding: 0;
-  background: none;
-}
-
-.products__button {
+.products__btn {
   margin: 13px auto 14px auto;
   min-height: 40px;
   width: 100%;
@@ -181,8 +225,17 @@
   background-color: $color-basic-green;
   border: none;
 
-  &--all {
+  &--more {
     background-color: $color-basic-grey;
     color: $color-special-dark-grey;
+  }
+
+  @include tablet {
+    margin-bottom: 40px;
+    line-height: 20px;
+
+    &--more {
+      margin-top: 87px;
+    }
   }
 }

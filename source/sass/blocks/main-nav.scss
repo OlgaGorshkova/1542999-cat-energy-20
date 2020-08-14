@@ -162,10 +162,6 @@
 
   @include desktop {
     margin-right: 37px;
-
-    &--active {
-      border-bottom-color: $color-basic-white;
-    }
   }
 }
 
@@ -235,13 +231,26 @@
 
     padding: 0;
     padding-bottom: 10px;
-  }
+  }  
 
-  @include desktop {
+  @include desktop {    
     font-size: 20px;
     line-height: 30px;
-    color: $color-basic-white;
+    color: $color-basic-black;
 
     padding-bottom: 8px;
+  }
+}
+
+.site-list--index {
+  a {
+    @include desktop {
+      color: $color-basic-white;
+    }
+  }
+  .site-list__item--active {
+    @include desktop {
+      border-bottom: 2px solid $color-basic-white;
+    }
   }
 }
