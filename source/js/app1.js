@@ -2,7 +2,7 @@ var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var headerBg = document.querySelector('.page-header__bg');
 
-headerBg.style.setProperty('--menu-height', 66 + 'px');
+headerBg.style.setProperty('--menu-height', 66 + 'px'); //todo проверить что страница индекс
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function() {

@@ -153,6 +153,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  color: $color-basic-black;
+  text-decoration: none;
   
   @include tablet {
     text-align: center;
@@ -182,14 +184,14 @@
   }
 
   @include tablet {
-    width: 252px;
+    width: 168px;
     height: 161px;
     position: relative;
 
     img {
       position: absolute;
       bottom: 34px;
-      left: -36px;
+      left: -78px;
       height: auto;
       width: auto;
       max-width:  unset;
@@ -198,11 +200,11 @@
   }
 
   @include desktop{
-    width: 168px;
+    width: 172px;
 
     img {
       bottom: 40px;
-      left: -38px;
+      left: -36px;
     }
 
   }
