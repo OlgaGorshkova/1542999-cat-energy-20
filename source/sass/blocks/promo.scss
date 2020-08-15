@@ -13,7 +13,7 @@
 }
 
 .promo__header {
-  order: 1;  
+  order: 1;
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-style: normal;
@@ -65,8 +65,8 @@
 
   color: $color-basic-white;
 
-  @include tablet {   
-    margin-bottom: 20; 
+  @include tablet {
+    margin-bottom: 20;
     text-align: left;
     font-size: 20px;
     line-height: 100%;
@@ -74,17 +74,18 @@
     color: $color-basic-black;
   }
 
-  @include desktop {   
+  @include desktop {
     margin-bottom: 0;
   }
 }
 
 .promo__img {
-  position: relative;  
-  order: 2;  
+  position: relative;
+  order: 2;
 
   @include tablet {
     order: 3;
+
     img {
       width: 709px;
       height: 609px;
@@ -95,6 +96,7 @@
     padding-top: 32px;
     padding-bottom: 136px;
     margin-left: -46px;
+
     img {
       width: 552px;
       height: 499px;
@@ -106,7 +108,7 @@
   min-height: 40px;
   order: 3;
   width: 100%;
-  
+
   @include tablet {
     order: 2;
     width: 244px;

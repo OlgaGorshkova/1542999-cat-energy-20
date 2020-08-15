@@ -15,29 +15,9 @@
 
   background: $color-basic-white;
   color: $color-basic-black;
-
-  // &--index {
-  //   @include mobile-only {
-  //     background-image: url('../../img/index-background-mobile@1x.jpg');
-  //     background-repeat: no-repeat;
-  //     background-position: center 66px;
-  //     background-size: 320px auto;  // height = 305px;
-  //   }
-
-  //   @include tablet {
-  //     background: none;
-  //   }
-
-  //   @include desktop {
-  //     background-image: url('../../img/index-background-desktop@1x.jpg');
-  //     background-repeat: no-repeat;
-  //     background-position: right top;
-  //     background-size: auto auto;
-  //   }
-  // }  
 }
 
-.container {  
+.container {
   @include mobile-only {
     padding-left: 20px;
     padding-right: 20px;

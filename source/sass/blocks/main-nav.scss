@@ -50,8 +50,8 @@
   .main-nav--closed .fix-space {
     display: none;
   }
-  
-  .main-nav--opened .fix-space {  
+
+  .main-nav--opened .fix-space {
     display: block;
     width: 0;
     height: 212px;
@@ -94,7 +94,7 @@
     padding-right: 21px;
     padding-left: 21px;
     text-align: left;
-  }  
+  }
 }
 
 
@@ -103,7 +103,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 26px;
     height: 2px;
     background-color: $color-basic-black;
@@ -135,7 +135,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  } 
+  }
 }
 
 .site-list {
@@ -150,10 +150,10 @@
 .site-list__item {
   @include tablet {
     margin-right: 32px;
- 
+
     &:last-child {
-     margin-right: 0;
-    } 
+      margin-right: 0;
+    }
 
     &--active {
       border-bottom: 2px solid $color-basic-green;
@@ -169,13 +169,11 @@
   @include tablet {
     &:hover {
       color: red;
- 
       background-color: yellowgreen;
     }
- 
+
     &:active {
       color: #ffffff;
- 
       background-color: yellow;
       opacity: 0.3;
     }
@@ -217,11 +215,11 @@
     &:first-child {
       border-top: 1px solid $color-special-grey-2;
     }
-  
+
     &:last-child {
       border-bottom: none;
     }
-  }  
+  }
 
   @include tablet {
     font-family: "Oswald-Regular", "Arial", sans-serif;
@@ -231,9 +229,9 @@
 
     padding: 0;
     padding-bottom: 10px;
-  }  
+  }
 
-  @include desktop {    
+  @include desktop {
     font-size: 20px;
     line-height: 30px;
     color: $color-basic-black;
@@ -248,6 +246,7 @@
       color: $color-basic-white;
     }
   }
+
   .site-list__item--active {
     @include desktop {
       border-bottom: 2px solid $color-basic-white;

@@ -22,7 +22,7 @@
   @include tablet {
     margin-bottom: 32px;
     font-size: 60px;
-    line-height: 100%;    
+    line-height: 100%;
   }
 }
 
@@ -72,7 +72,7 @@
     }
   }
 
-  @include tablet {    
+  @include tablet {
     margin: 40px 0 31px;
     width: 80px;
     height: 80px;
@@ -89,7 +89,7 @@
     z-index: -1;
     display: block;
     margin: 0;
-    font-family: 'Oswald-Regular', 'Arial', sans-serif;
+    font-family: "Oswald-Regular", "Arial", sans-serif;
     font-weight: normal;
     font-size: 280px;
     line-height: 280px;
@@ -107,7 +107,7 @@
   color: $color-special-dark-grey;
 
   @include tablet {
-    margin-left: 0px;
+    margin-left: 0;
     width: auto;
 
     font-size: 16px;

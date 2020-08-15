@@ -5,7 +5,7 @@
   margin: 0;
   list-style: none;
 
-  @include tablet {    
+  @include tablet {
     padding-top: 0;
     padding-bottom: 45px;
   }
@@ -15,7 +15,7 @@
     padding-bottom: 71px;
 
     flex-direction: row;
-    flex-wrap: nowrap;        
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
@@ -26,12 +26,12 @@
   flex-wrap: wrap;
   padding: 24px 20px 18px;
   margin-bottom: 20px;
-  margin-right: 0px;
+  margin-right: 0;
 
   &:last-child {
     margin-bottom: 0;
   }
- 
+
   background-color: $color-basic-grey;
 
   @include tablet {
@@ -42,7 +42,7 @@
   @include desktop {
     flex-basis: 570px;
     flex-grow: 1;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-top: 47px;
 
     &:first-child {
@@ -65,6 +65,7 @@
 
   @include desktop {
     padding-right: 62px;
+
     svg {
       width: 100px;
       height: 100px;
@@ -72,7 +73,7 @@
   }
 }
 
-.aims__title {  
+.aims__title {
   flex-grow: 1;
   align-self: center;
 
@@ -87,7 +88,6 @@
     font-size: 36px;
     line-height: 36px;
   }
-
 }
 
 .aims__text {
@@ -111,7 +111,7 @@
 
 .aims__link {
   padding: 15px 0 0;
-  
+
   a {
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 16px;
