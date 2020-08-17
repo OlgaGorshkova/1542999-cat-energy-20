@@ -1,29 +1,80 @@
 .page-header {
-  border-bottom: 1px solid $color-special-grey-2;
+  @include mobile-only {
+    border-bottom: 1px solid $color-special-grey-2;
+  }
+}
+
+.page-header__bg {
+  position: absolute;
+  top: var(--menu-height);
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+
+  background-color: #65a93c;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 50%;
+    text-align: right;
+
+    img {
+      width: 720px;
+      height: 696px;
+    }
+  }
 }
 
 .page-header__wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 11px;
-  margin-bottom: 17px;
+  flex-direction: row;
+
+  padding-top: 11px;
+
+  @include tablet {
+    padding-top: 24px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  @include desktop {
+    padding-top: 53px;
+  }
 }
 
-.page-header__bg {
-  position: relative;
+.page-header__logo {
+  @include mobile-only {
+    margin-bottom: 17px;
+    height: 38px;
+    flex-basis: 240px;
+    flex-grow: 1;
 
-  &-wrapper {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+    background-image: url("../../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
 
-    @include mobile-only {
-      width: 100%;
-      background-color: $color-bg-cat-index;
-      text-align: center;
-    }
+  @include tablet {
+    height: 52px;
+    width: 174px;
+
+    background-image: url("../../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  @include desktop {
+    height: 59px;
+    width: 202px;
+
+    background-image: url("../../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left;
   }
 }
