@@ -7,19 +7,35 @@
   flex-direction: column;
 
   align-items: center;
-  margin: 7px 20px 22px;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .page-footer__logo {
-  width: 100%;
   border-bottom: 1px solid $color-line;
   text-align: center;
-  padding: 32px 0;
+  padding: 39px 0 32px;
+  width: 100%;
+
+  @include tablet {
+    text-align: left;
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
 }
 
 .page-footer__social {
-  width: 100%;
+  padding: 20px 0 21px;
   border-bottom: 1px solid $color-line;
+  text-align: center;
+  width: 100%;
+
+  @include tablet {
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .social {
@@ -28,7 +44,11 @@
   width: 130px;
   height: 22px;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 0 auto;
+
+  @include tablet {
+    height: 33px;
+  }
 }
 
 .social__icon {
@@ -37,18 +57,32 @@
   background-position: center;
   height: 22px;
   width: 22px;
+
+  @include tablet {
+    height: 33px;
+    width: 33px;
+  }
 }
 
 .page-footer__copyright {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 22px 0;
+  width: 100%;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
+  padding-right: 22px;
   color: $color-special-dark-grey;
   font-size: 16px;
   line-height: 18px;
+  text-decoration: none;
 }

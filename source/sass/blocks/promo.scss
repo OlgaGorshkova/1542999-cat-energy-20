@@ -3,17 +3,29 @@
   flex-direction: column;
   align-items: center;
 
-  margin-left: 20px;
-  margin-right: 20px;
+  @include tablet {
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .promo__header {
-  height: 305px;
-  width: 100%;
+  order: 1;
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+
+  @include tablet {
+    padding-left: 87px;
+  }
+
+  @include desktop {
+    padding-left: 80px;
+  }
 }
 
 .promo__title {
@@ -22,35 +34,98 @@
   padding-bottom: 25px;
 
   font-size: 36px;
+  font-weight: normal;
   line-height: 100%;
   text-align: center;
 
   color: $color-basic-white;
+
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 41px;
+
+    text-align: left;
+    font-size: 60px;
+
+    color: $color-basic-black;
+  }
+
+  @include desktop {
+    padding-top: 111px;
+  }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 129%;
+  margin-top: 0;
+  margin-bottom: 29px;
 
   text-transform: uppercase;
   text-align: center;
 
   color: $color-basic-white;
+
+  @include tablet {
+    margin-bottom: 20;
+    text-align: left;
+    font-size: 20px;
+    line-height: 100%;
+
+    color: $color-basic-black;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .promo__img {
   position: relative;
-  width: 280px;
-  height: 135px;
+  order: 2;
 
-  &--mobile {
-    position: absolute;
-    top: -135px;
+  @include tablet {
+    order: 3;
+
+    img {
+      width: 709px;
+      height: 609px;
+    }
+  }
+
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 136px;
+    margin-left: -46px;
+
+    img {
+      width: 552px;
+      height: 499px;
+    }
   }
 }
 
 .promo__button {
-  height: 40px;
+  min-height: 40px;
+  order: 3;
+  width: 100%;
+
+  @include tablet {
+    order: 2;
+    width: 244px;
+    min-height: 54px;
+    position: absolute;
+    top: 370px;
+    left: 117px;
+
+    font-size: 20px;
+    line-height: 0px;
+  }
+
+  @include desktop {
+    top: 455px;
+    left: 190px;
+  }
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-style: normal;
