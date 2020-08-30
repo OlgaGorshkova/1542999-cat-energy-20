@@ -1,6 +1,5 @@
 .example {
     padding-top: 27px;
-    padding-bottom: 23px;
 
     background-color: #eaeaea;
 
@@ -11,6 +10,17 @@
     font-size: 14px;
     line-height: 18px;
     color: $color-special-dark-grey;
+
+    @include tablet {
+        padding-top: 43px;
+        background-color: $color-basic-white;
+
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @include desktop {
+        padding-top: 80px;
+    }
 }
 
 .example_title {
@@ -33,20 +43,64 @@
         margin-bottom: 76px;
     }
 }
-.exmaple_desciption {
+
+.example_content {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: #eaeaea;
+    }
+}
+
+.example_desciption {
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    @include desktop {
+        width: 50%;
+        padding-right: 134px;
+    }
 }
 
-.example_count {
+.example_text {
+  margin: 0;
+  @include desktop {
+      margin-top: 70px;
+      margin-bottom: 70px;
+  }
+}
+
+.example_count_list {
+    list-style: none;
+    display: flex;
+    margin: 25px 0 25px;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include desktop {   
+        width: 100%;
+        margin: 0;
+    }
+}
+.example_count_item { 
+    margin-right: 31px;
+    width: 122px;
+    min-height: 56px;    
     display: flex;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    margin: 0 31px 0 0;
-    width: 124px;
-    min-height: 56px;
 
     border:  1px solid $color-special-grey;
     border-radius: 3px;
@@ -57,15 +111,20 @@
     font-size: 24px;
     line-height: 1;    
     color: $color-basic-black;
-    text-transform: uppercase;
-
-    &:last-child{
+    text-transform: uppercase; 
+    
+    &:last-child {
         margin-right: 0;
+    }
+
+    @include tablet {
+        min-height: 77px;
     }
 }
 
+
 .example__list {
-    margin: 26px 0 42px;
+    margin: 0 0 42px;
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -86,8 +145,46 @@
         display: inline-block;
         margin-left: 10px;
     }
+    
+    @include tablet {
+        margin: 54px 0 42px;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-end;        
+    }
+
+    @include desktop {
+        margin: 55px 0 75px;
+        flex-direction: row;
+        align-items: flex-start;        
+        justify-content: space-between;
+    }
 }
 
-.example_img {
+.example__img {
+    flex-grow: 1;
     text-align: center;
+    position: relative;
+    background-color: #eaeaea;
+
+    @include tablet {   
+        height: 428px;
+        margin-top: 191px;
+        img {
+            width: 708px;
+            position: absolute;
+            bottom: 67px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    @include desktop {
+        width: 50%;
+        height: 361px;
+        margin-top: 0;
+        img {
+            width: 730px;
+        }
+    }
 }
