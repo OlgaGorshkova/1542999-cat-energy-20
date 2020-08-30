@@ -16,4 +16,13 @@
   text-transform: uppercase;
   text-decoration: none;
   color:$color-basic-white;
+
+  &:hover {
+    background-color: $color-basic-green-2;
+  }
+
+  &:active {
+    background-color: $color-basic-green-2;
+    color: rgba(255,255,255,0.3);
+  }
 }

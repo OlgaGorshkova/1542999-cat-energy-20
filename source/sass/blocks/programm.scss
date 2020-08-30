@@ -35,6 +35,19 @@
         text-transform: uppercase;        
         color: $color-special-dark-grey;
 
+        &:hover {
+            border-color: $color-special_grey;
+        }
+
+        &:focus{
+            border-color: $color-special_dark-grey;
+            outline: none;
+        }
+
+        &:invalid:focus {
+            border-color: $color-status-error;
+        }
+
         @include tablet {
             font-size: 20px;
             line-height: 30px;

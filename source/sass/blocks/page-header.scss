@@ -51,6 +51,14 @@
 }
 
 .page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+  
   @include mobile-only {
     margin-bottom: 17px;
     height: 38px;
