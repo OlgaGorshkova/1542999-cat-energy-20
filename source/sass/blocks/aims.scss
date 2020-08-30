@@ -180,27 +180,25 @@
 
 .aims__link {
   padding: 15px 0 0;
+  width: 100%;
+  background-image: url("../../img/icon-arrow.svg");
+  background-repeat: no-repeat; 
+  background-position: 100px 17px;
 
-  a {
-    font-family: "Oswald-Regular", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 100%;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
 
-    padding-right: 17px;
-
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $color-basic-black;
-
-    @include tablet {
-      padding-right: 25px;
-
-      font-size: 20px;
-      line-height: 30px;
-    }
-  }
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-basic-black;
 
   @include tablet {
-    padding: 0;
+    padding-top: 0;
+    background-position: 129px;
+  }
+
+  @include desktop {
+    background-position: 136px;
   }
 }
