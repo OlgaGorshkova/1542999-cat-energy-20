@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header container">
-      <div class="page-header__wrapper">
+    <header class="page-header">
+      <div class="page-header__wrapper container">
         <a class="page-header__logo" href="index.html"></a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -38,8 +38,8 @@
       </div>
     </header>
 
-    <main class="page-main container">
-      <section class="products">
+    <main class="page-main">
+      <section class="products container">
         <h1 class="products__header">
           Каталог продукции
         </h1>
@@ -258,35 +258,53 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="#">
-          <img src="img/logo.svg" width="128" height="24" alt="Кэт энерджи">
-        </a>
-        <div class="page-footer__social">
-          <div class="social">
-            <a class="social__icon social__icon--vk" href="http://vk.com">
-              <svg width="23" height="16" x="0px" y="0px" viewBox="0 0 23 16">
-                <use xlink:href="sprites.svg#vk" />
-              </svg>
-            </a>
-            <a class="social__icon social__icon--instagram" href="http://instagram.com">
-              <svg width="16" height="16" x="0px" y="0px" viewBox="0 0 16 16">
-                <use xlink:href="sprites.svg#instagram" />
-              </svg>
-            </a>
-            <a class="social__icon social__icon--fb" href="http://facebook.com">
-              <svg width="22" height="22" x="0px" y="0px" viewBox="0 0 22 22">
-                <use xlink:href="sprites.svg#fb" />
-              </svg>
-            </a>
+    <footer class="page-footer">
+      <section class="contact">
+        <div class="contact_wrapper">
+          <h2 class="contat__title">
+            приглашаем<br> к сотрудничеству<br> дилеров!
+          </h2>
+          <div class="contat__address">
+            <p>ул. Большая<br> Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
           </div>
         </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Кэт энерджи">
+      </section>
+
+      <section class="map">
+        <img class="map__pin" src="img/map-pin.png" width="57" height="53" alt="положение на карте">
+      </section>
+
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo" href="#">
+            <img src="img/logo.svg" width="128" height="24" alt="Кэт энерджи">
           </a>
+          <div class="page-footer__social">
+            <div class="social">
+              <a class="social__icon social__icon--vk" href="http://vk.com">
+                <svg width="23" height="16" x="0px" y="0px" viewBox="0 0 23 16">
+                  <use xlink:href="sprites.svg#vk" />
+                </svg>
+              </a>
+              <a class="social__icon social__icon--instagram" href="http://instagram.com">
+                <svg width="16" height="16" x="0px" y="0px" viewBox="0 0 16 16">
+                  <use xlink:href="sprites.svg#instagram" />
+                </svg>
+              </a>
+              <a class="social__icon social__icon--fb" href="http://facebook.com">
+                <svg width="22" height="22" x="0px" y="0px" viewBox="0 0 22 22">
+                  <use xlink:href="sprites.svg#fb" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Кэт энерджи">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

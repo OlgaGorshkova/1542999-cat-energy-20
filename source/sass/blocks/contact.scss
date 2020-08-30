@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
 
+    &.contact--index {
+        background-color: $color-basic-white;
+    }
+
     @include tablet {
         padding: 66px 71px 51px;
     }
