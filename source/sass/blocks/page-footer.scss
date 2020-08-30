@@ -41,26 +41,39 @@
 .social {
   display: flex;
   flex-direction: row;
-  width: 130px;
-  height: 22px;
-  justify-content: space-between;
-  margin: 0 auto;
-
-  @include tablet {
-    height: 33px;
-  }
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .social__icon {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 22px;
-  width: 22px;
-
+  margin-right: 36px;
+  
   @include tablet {
-    height: 33px;
-    width: 33px;
+    &.social__icon--vk {
+      svg {
+        width: 30px;
+        height: 22px;
+      }
+    }
+
+    &.social__icon--instagram {
+      svg {
+        width: 23px;
+        height: 23px;
+      }      
+    }
+
+    &.social__icon--fb {
+      svg {
+        width: 28px;
+        height: 33px;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
