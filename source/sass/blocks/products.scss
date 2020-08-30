@@ -175,13 +175,16 @@
 
   &--more {
     text-align: center;
-
-    button {
-      margin-top: 14px;
-      margin-bottom: 23px;
+    a {
       border: none;
       padding: 0;
       background: none;
+      text-decoration: none;
+    }
+
+    svg {
+      padding-top: 23px;
+      padding-bottom: 23px;
     }
   }
 
@@ -197,6 +200,15 @@
       height: auto;
       width: auto;
       max-width: unset;
+    }
+
+    &--more {
+      svg {
+        width: 60px;
+        height: 60px;
+        padding-top: 52px;
+        padding-bottom: 49px;
+      }
     }
   }
 
