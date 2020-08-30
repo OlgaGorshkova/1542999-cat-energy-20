@@ -48,7 +48,7 @@
 
 .social__icon {
   margin-right: 36px;
-  
+
   @include tablet {
     &.social__icon--vk {
       svg {
@@ -61,7 +61,7 @@
       svg {
         width: 23px;
         height: 23px;
-      }      
+      }
     }
 
     &.social__icon--fb {

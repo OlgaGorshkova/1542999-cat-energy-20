@@ -175,6 +175,7 @@
 
   &--more {
     text-align: center;
+
     a {
       border: none;
       padding: 0;
@@ -246,10 +247,10 @@
     &:hover {
       background-color: $color-special-grey-2;
     }
-    
+
     &:active {
       background-color: $color-special-grey-2;
-      color: rgba(68,68,68,0.3);
+      color: rgba(68, 68, 68, 0.3);
     }
   }
 

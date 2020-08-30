@@ -77,7 +77,7 @@
   }
 
   .main-nav--nojs {
-    width: 100%; 
+    width: 100%;
 
     .main-nav__toggle {
       display: none;
@@ -150,13 +150,13 @@
     @include desktop {
       a {
         color: $color-basic-white;
-  
+
         &:hover {
-          color:rgba(255,255,255,0.6);
+          color: rgba(255, 255, 255, 0.6);
         }
-    
+
         &:active {
-          color:rgba(255,255,255,0.3);
+          color: rgba(255, 255, 255, 0.3);
         }
       }
     }
@@ -177,11 +177,11 @@
     text-decoration: none;
 
     &:hover {
-      color:rgba(0,0,0,0.6);
+      color: rgba(0, 0, 0, 0.6);
     }
 
     &:active {
-      color:rgba(0,0,0,0.3);
+      color: rgba(0, 0, 0, 0.3);
     }
 
     @include mobile-only {
@@ -213,19 +213,17 @@
 
       padding-bottom: 8px;
     }
-  } 
-  
+  }
 }
 
 
 .site-list__item {
-
   .site-list__item--active {
     @include desktop {
       border-bottom: 2px solid $color-basic-white;
     }
   }
-  
+
   @include tablet {
     margin-right: 32px;
 

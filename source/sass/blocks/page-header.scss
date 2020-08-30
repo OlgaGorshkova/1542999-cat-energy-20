@@ -58,7 +58,7 @@
   &:active {
     opacity: 0.6;
   }
-  
+
   @include mobile-only {
     margin-bottom: 17px;
     height: 38px;

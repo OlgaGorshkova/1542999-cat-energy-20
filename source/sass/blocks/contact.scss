@@ -1,73 +1,74 @@
 .contact {
-    position: relative;
+  position: relative;
 }
+
 .contact_wrapper {
-    padding: 28px 20px 22px;
-    display: flex;
-    justify-content: space-between;
+  padding: 28px 20px 22px;
+  display: flex;
+  justify-content: space-between;
 
-    &.contact--index {
-        background-color: $color-basic-white;
-    }
+  &.contact--index {
+    background-color: $color-basic-white;
+  }
 
-    @include tablet {
-        padding: 66px 71px 51px;
-    }
+  @include tablet {
+    padding: 66px 71px 51px;
+  }
 
-    @include desktop {
-        position: absolute;
-        top: 95px;
-        left: 110px;
+  @include desktop {
+    position: absolute;
+    top: 95px;
+    left: 110px;
 
-        width: 570px;
-        padding-right: 89px;
-        padding-left: 76px;
+    width: 570px;
+    padding-right: 89px;
+    padding-left: 76px;
 
-        background-color: $color-basic-white;
+    background-color: $color-basic-white;
 
-        z-index: 5;
-    }
+    z-index: 5;
+  }
 }
 
-.contat__title {    
-    margin: 0;
-    width: 50%;
+.contat__title {
+  margin: 0;
+  width: 50%;
 
-    font-family: "Oswald-Regular", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color:#111111;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
 
-    @include tablet {        
-        font-size: 20px;
-        line-height: 21px;
-    }
+  @include tablet {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contat__address {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    width: 50%;
+  width: 50%;
 
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include tablet {
     p {
-        margin: 0;
-        font-size: 14px;
-        line-height: 20px;        
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
     }
+  }
 
-    @include tablet {
-        p {
-            font-size: 16px;
-            line-height: 20px;
-            text-align: right;
-        }        
-    }
-
-    @include desktop {
-        text-align: left;
-    }   
+  @include desktop {
+    text-align: left;
+  }
 }
