@@ -8,14 +8,29 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media(min-resolution: 2dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+    background-size: cover;
+  }
+
   @include tablet {
     height: 400px;
     background-image: url("../../img/bg-map-tablet@1x.png");
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   @include desktop {
     height: 400px;
     background-image: url("../../img/bg-map-desktop@1x.png");
+    
+    @media(min-resolution: 2dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }
 
