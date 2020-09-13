@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  cursor: pointer;
+  min-width: fit-content;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  background-color: $color-basic-green;
+  border: none;
+
+  font-family: $base_font_regular;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-basic-white;
+
+  &:hover {
+    background-color: $color-basic-green-2;
+  }
+
+  &:active {
+    background-color: $color-basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

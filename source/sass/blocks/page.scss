@@ -32,4 +32,11 @@
     padding-left: 110px;
     padding-right: 110px;
   }
+
+  &--nomobile {
+    @include mobile-only {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

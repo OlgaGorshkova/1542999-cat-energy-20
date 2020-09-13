@@ -9,9 +9,11 @@ $color-status-error: #ff8282;
 $color-basic-green-2: #5eaa2f;
 
 $color-line: #d9d9d9;
+$color-form-input: #e7e7e7;
 $color-bg-cat-index: #65a93c;
 $color-basic-white: #ffffff;
 $color-basic-black: #000000;
+$color-status-error: #ff8282;
 
 // Viewports
 $tablet-width: 768px;
@@ -19,3 +21,7 @@ $desktop-width: 1440px;
 $mobile-width-only: 767px;
 
 $container-mobile: 280px;
+
+//fonts
+$base_font_regular: "Oswald-Regular", "Arial", sans-serif;
+$base_font_medium: "Oswald-Medium", "Arial", sans-serif;
