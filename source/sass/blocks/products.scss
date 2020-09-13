@@ -58,6 +58,8 @@
 .products__item {
   @include mobile-only {
     border-bottom: 1px solid $color-special-grey-2;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -181,6 +183,7 @@
       padding: 0;
       background: none;
       text-decoration: none;
+      display: inline-block;
     }
 
     svg {
